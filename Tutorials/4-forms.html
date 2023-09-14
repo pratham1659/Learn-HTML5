@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .container{
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <center>
+    <h2>This is HTML Forms</h2>
+    <form action="backend.php">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="myname" id="name" placeholder="First name">
+        </div>
+        <br>
+        <div>
+            <label for="Role">Role</label>
+            <input type="text" name="myrole" id="Role">
+        </div>
+        <br>
+        <div>
+            <label for="Email">Email</label>
+            <input type="email" name="myemail" id="Email">
+        </div>
+        <br>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="mydate" id="date">
+        </div>
+        <br>
+        <div>
+            <label for=" Are You Eligible ?">Are You Eligible ? </label>
+            <input type="checkbox" name="mycheckbox" checked id=" Are You Eligible ?">
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender"> Other <input
+                type="radio" name="mygender">
+        </div>
+        <div>
+            Write About Yourself: <br><textarea name="mytext" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Select Your car Model</label>
+            <select name="mycar" id="car">
+                <option value="Maruti Suzuki" selected>Maruti Suzuki</option>
+                <option value="Indica">Indica</option>
+                <option value="Hunday">Hunday</option>
+            </select>
+        </div>
+        <input type="submit" value="submit Now">
+        <input type="reset" value="reset Now">
+    </form>
+</center>
+</body>
+
+</html>

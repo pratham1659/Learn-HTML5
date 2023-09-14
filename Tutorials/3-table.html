@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and list in Html</title>
+    <!-- Using CSS Border prperty to add borders -->
+    <!-- <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style> -->
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        /* <!-- Adding cell padding --> */
+        th,
+        td {
+            padding: 15px;
+        }
+
+        /* Adding Table Alignment */
+        th,
+        td {
+            text-align: center;
+        }
+
+        /* Adding Background colour */
+        table#t01 tr:nth-child(even) {
+            background-color: #eee;
+        }
+
+        table#t01 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        table#t01 th {
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- steps for list -->
+    <ol type="A">
+        <li>This is an ordered list</li>
+        <li>This is an ordered list</li>
+    </ol>
+    <ul type="circle" start="2">
+        <li>This is an unordered list</li>
+        <ol>
+            <li> Another one </li>
+            <li> Another two </li>
+            <li> Another three</li>
+        </ol>
+        <li>This is an unordered list</li>
+    </ul>
+    <!-- Defintion list -->
+    <dl>
+        <dt>Study</dt>
+        <dd>The devotion of time and attention to acquiring knowledge on an academic subject, especially by means of
+            books</dd>
+        <dt>Design</dt>
+        <dd>A plan or drawing produced to show the look and function or workings of a building, garment, or other object
+            before it is built or made</dd>
+        <dd>Purpose, planning, or intention that exists or is thought to exist behind an action, fact, or material
+            object</dd>
+        <dt>Business</dt>
+        <dt>Work</dt>
+        <dd>A person's regular occupation, profession, or trade</dd>
+    </dl>
+    <!-- Tables steps -->
+    <h2>Table Caption</h2>
+<p>To add a caption to a table, use the caption tag.</p>
+    <table id="t01" style="width:50%">
+        <caption><h4>List of students</h4></caption>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>Telephone:</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+            <td >55577854</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+            <td rowspan="2">55577855</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <ol>		
+        <li>Vegetables</li>	
+        <li>Fruit/li>
+        <ul>				
+           <li>Blueberries</li>
+           <li>Bananas</li>
+        </ul>
+    </ol>
+</body>
+
+</html>

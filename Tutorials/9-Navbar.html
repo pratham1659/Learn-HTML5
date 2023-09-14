@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar in html</title>
+    <style>
+        body {
+            margin: 0px;
+            width: 100%;
+        }
+         /* Place the navbar at the Top of the page, and make it stick
+         .navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+           width: 100%;
+        } */
+
+        /* Place the navbar at the bottom of the page, and make it stick */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 10px 0px;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            bottom: 100px;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Social</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">About Us</a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </li>
+        <li style="float:right"><a class="active" href="#login">Login</a></li>
+    </ul>
+    <center>
+        <h2>This is HTML Forms</h2>
+        <form action="backend.php">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="myname" id="name">
+            </div>
+            <br>
+            <div>
+                <label for="Role">Role</label>
+                <input type="text" name="myrole" id="Role">
+            </div>
+            <br>
+            <div>
+                <label for="Email">Email</label>
+                <input type="email" name="myemail" id="Email">
+            </div>
+            <br>
+            <div>
+                <label for="date">Date</label>
+                <input type="date" name="mydate" id="date">
+            </div>
+            <br>
+            <div>
+                <label for=" Are You Eligible ?">Are You Eligible ? </label>
+                <input type="checkbox" name="mycheckbox" checked id=" Are You Eligible ?">
+            </div>
+            <br>
+            <div>
+                Gender: Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender"> Other
+                <input type="radio" name="mygender">
+            </div>
+            <div>
+                Write About Yourself: <br><textarea name="mytext" id="" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="car">Select Your car Model</label>
+                <select name="mycar" id="car">
+                    <option value="Maruti Suzuki" selected>Maruti Suzuki</option>
+                    <option value="Indica">Indica</option>
+                    <option value="Hunday">Hunday</option>
+                </select>
+            </div><br>
+            <input type="submit" value="submit Now">
+            <input type="reset" value="reset Now">
+        </form>
+    </center>
+</body>
+
+</html>

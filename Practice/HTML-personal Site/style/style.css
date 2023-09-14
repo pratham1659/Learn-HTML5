@@ -1,0 +1,94 @@
+/* Prefrerence in css for selectors */
+
+/* 
+1st is Inline Selectors
+2nd is id Selectors
+3rd is Class Selectors
+
+*/
+
+/* Specificity */
+/* Pseudo Selector */
+
+li:hover{
+    color: red;
+}
+
+li:first-child{
+    color: white;
+}
+
+li:last-child{
+
+    color: white;
+}
+
+li:nth-child(34){
+
+    background-color: white;
+}
+
+li:only-child{
+    color: black;
+}
+
+/* pseudo selectors for a:link tag */
+#google-link:link{
+
+    color: blue;
+
+}
+
+#google-link:visited{
+
+    color: red;
+}
+
+/* Advanced Selectors in CSS */
+
+h2 + a{
+    color: black;
+}
+
+textarea ~ button{
+
+    color: purple;
+}
+
+
+/* child selector in advanced*/
+ul > li{
+    color: white;
+}
+
+ul li{
+    /* it will select every li inside of ul */
+    color: black;
+}
+
+
+/* Attribute Selectors */
+img[src="../resources/"]{
+border: 2px solid black;
+}
+
+/* specific class selectors */
+h2[class~=article-subtilte]{
+    background-color: yellow;
+}
+
+h2[class=subtitle-20935]{
+    color: blue;
+}
+
+
+/* Gradient in CSS */
+.service-img{
+    height: 400px;
+    width: 400px;
+
+    /* background: stealblue; */
+    background: linear-gradient(to right, red, green, ); /* Top Bottom Left and Right */
+    background: linear-gradient(to right,rgb(175, 88, 88), rgba(192, 74, 74, 0.233));
+    background-size: cover;
+}
